@@ -1,9 +1,10 @@
 import { Briefcase, Code, Mail, User } from 'lucide-react'; // Si quieres usar iconos
-
+import './App.css'
 function App() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
       {/* Navbar */}
+      <div className='background-container'>
       <nav className="bg-white shadow-sm p-4 sticky top-0 z-10">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <h1 className="text-5xl font-extrabold text-red-500 bg-yellow-400">Alfredo.dev</h1>
@@ -50,6 +51,7 @@ function App() {
 
         </div>
       </main>
+    </div>
     </div>
   );
 }

@@ -6,7 +6,15 @@
   padding: 2rem;
   text-align: center;
 }
-
+.background-container {
+  background-image: url('https://www.xtrafondos.com/wallpaper/5120x2880/13750-arte-abstracto-degradado-de-rosa-morado.html#&gid=1&pid=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%
+}
+  
 .logo {
   height: 6em;
   padding: 1.5em;
