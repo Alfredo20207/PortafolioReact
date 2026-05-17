@@ -5,12 +5,14 @@ function Proyectos() {
   ];
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>Mis Proyectos 📂</h2>
-      <ul>
+    <div className="text-center mt-10">
+      <h2 className="text-3xl font-semibold">Mis Proyectos 📂</h2>
+      <ul className="mt-6 space-y-3">
         {lista.map((p, i) => (
           <li key={i}>
-            <a href={p.link} target="_blank" rel="noreferrer">{p.nombre}</a>
+            <a href={p.link} target="_blank" rel="noreferrer" className="text-blue-500 hover:underline">
+              {p.nombre}
+            </a>
           </li>
         ))}
       </ul>

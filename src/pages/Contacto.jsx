@@ -1,8 +1,10 @@
 function Contacto() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>Contacto 📧</h2>
-      <p>Puedes escribirme a: <strong>alfredo@example.com</strong></p>
+    <div className="text-center mt-10">
+      <h2 className="text-3xl font-semibold">Contacto 📧</h2>
+      <p className="mt-4 text-lg text-gray-600">
+        Escríbeme a: <span className="font-bold">alfredo@example.com</span>
+      </p>
     </div>
   );
 }
