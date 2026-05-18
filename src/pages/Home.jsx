@@ -1,15 +1,17 @@
 import { FaReact, FaPython, FaDatabase, FaGitAlt, FaBitbucket } from "react-icons/fa";
 import { 
   SiJavascript, 
-  SiR,   
-  SiMicrosoftexcel 
+  SiR,    
+  SiPowerbi,
+  SiMongodb,
+  SiRailway
 } from "react-icons/si";
 import perfil from "../assets/perfil.jpeg";
 
 
 function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white">
+    <div className="flex flex-col items-center justify-center flex-grow py-16">
       {/* Imagen de perfil */}
       <img 
         src={perfil} 
@@ -28,12 +30,14 @@ function Home() {
         
         <FaReact className="text-blue-400" title="React" />
         <SiR className="text-sky-400" title="R" />
-        <SiMicrosoftexcel className="text-green-600" title="Excel" />
         <FaDatabase className="text-green-400" title="Bases de Datos" />
+        <SiMongodb className="text-green-400" title="MongoDB" />
+        <SiRailway className="text-black" title="Railway" />
         <SiJavascript className="text-yellow-300" title="JavaScript" />
         <FaGitAlt className="text-orange-500" title="Git" />
-        <FaPython className="text-blue-500" title="Python" />
         <FaBitbucket className="text-blue-400" title="Bitbucket" />
+        <FaPython className="text-blue-500" title="Python" />
+        <SiPowerbi className="text-blue-400" title="Power BI" />
       </div>
 
       {/* Botón de proyectos */}

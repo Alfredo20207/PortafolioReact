@@ -8,7 +8,7 @@ function Footer() {
         <a href="https://github.com/Alfredo20207" target="_blank" rel="noreferrer">
           <FaGithub className="hover:text-yellow-400" />
         </a>
-        <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/alfredo-resendiz-ing" target="_blank" rel="noreferrer">
           <FaLinkedin className="hover:text-yellow-400" />
         </a>
         
