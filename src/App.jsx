@@ -8,16 +8,17 @@ import Contacto from "./pages/Contacto";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        {/* Ruta principal */}
-        <Route path="/" element={<Home />} />
-
-        {/* Otras páginas */}
-        <Route path="/proyectos" element={<Proyectos />} />
-        <Route path="/contacto" element={<Contacto />} />
-      </Routes>
-      <Footer />
+      <div className="min-h-screen flex flex-col bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/proyectos" element={<Proyectos />} />
+            <Route path="/contacto" element={<Contacto />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

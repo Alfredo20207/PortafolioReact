@@ -9,7 +9,7 @@ import perfil from "../assets/perfil.jpeg";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white">
       {/* Imagen de perfil */}
       <img 
         src={perfil} 
