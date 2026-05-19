@@ -1,5 +1,5 @@
-import { FaGithub, FaReact, FaPython, FaDatabase } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import { FaGithub, FaReact } from "react-icons/fa";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
 function Proyectos() {
   const lista = [
     { 
@@ -11,7 +11,7 @@ function Proyectos() {
         <FaGithub key="github" className="text-gray-400 text-2xl" title="GitHub" />,
         <SiJavascript key="js" className="text-yellow-400 text-2xl" title="JavaScript" />,
         <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
-      ]
+      ],
     }
   ];
 

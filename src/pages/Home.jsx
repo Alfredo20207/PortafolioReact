@@ -1,4 +1,4 @@
-import { FaReact, FaPython, FaDatabase, FaGitAlt, FaBitbucket } from "react-icons/fa";
+import { FaReact, FaPython, FaDatabase, FaGitAlt, FaBitbucket, FaFileDownload, FaAward, FaCertificate } from "react-icons/fa";
 import { 
   SiJavascript, 
   SiR,    
@@ -7,7 +7,7 @@ import {
   SiRailway
 } from "react-icons/si";
 import perfil from "../assets/perfil.jpeg";
-
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -45,13 +45,53 @@ function Home() {
         ))}
       </div>
 
-      {/* Botón de proyectos */}
-      <a
-        href="/proyectos"
-        className="bg-yellow-400 text-black font-bold px-8 py-3 rounded-lg shadow-xl hover:bg-yellow-500 hover:scale-105 hover:-translate-y-1 transition-all duration-300"
-      >
-        Ver mis proyectos 🚀
-      </a>
+      {/* Botones de acción */}
+      <div className="flex flex-col sm:flex-row gap-4 mt-4">
+        <a
+          href="/CV_Alfredo_Resendiz.pdf" 
+          download="CV_Alfredo_Resendiz.pdf"
+          className="flex items-center justify-center gap-2 bg-white text-indigo-600 font-bold px-8 py-3 rounded-lg shadow-xl hover:bg-gray-100 hover:scale-105 hover:-translate-y-1 transition-all duration-300"
+        >
+          <FaFileDownload className="text-xl" />
+          Descargar CV
+        </a>
+
+        <Link
+          to="/proyectos"
+          className="flex items-center justify-center gap-2 bg-yellow-400 text-black font-bold px-8 py-3 rounded-lg shadow-xl hover:bg-yellow-500 hover:scale-105 hover:-translate-y-1 transition-all duration-300"
+        >
+          Ver mis proyectos 🚀
+        </Link>
+      </div>
+
+      {/* Separador */}
+      <div className="w-full max-w-4xl border-t border-white/20 my-16"></div>
+
+      {/* Sección Certificaciones */}
+      <div className="w-full max-w-5xl px-4 flex flex-col items-center pb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-white flex items-center gap-3">
+          <FaAward className="text-yellow-400" />
+          Mis Certificaciones
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+          {[
+            { titulo: "Data Analysis with CCNA Roting and Switching: Introduction to networks", emisor: "Cisco", fecha: "2019" },
+            { titulo: "Programming Essentials in Python", emisor: "Cisco", fecha: "2020" },
+            { titulo: "Introduction to cybersecurity", emisor: "Cisco", fecha: "2021" },
+            { titulo: "Introduction to Power Bi", emisor:"Santander", fecha: "2026" },
+            { titulo: "Intruction to Data Science", emisor:"Santander", fecha: "2026"    }
+          ].map((cert, i) => (
+            <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg hover:bg-white/20 hover:-translate-y-2 transition-all duration-300 flex flex-col">
+              <FaCertificate className="text-3xl text-yellow-400 mb-4" />
+              <h3 className="text-xl font-bold text-white mb-2">{cert.titulo}</h3>
+              <p className="text-gray-200">{cert.emisor}</p>
+              <p className="text-sm text-gray-400 mt-auto pt-4">{cert.fecha}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
   );
 }
