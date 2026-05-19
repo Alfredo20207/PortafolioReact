@@ -1,12 +1,17 @@
 import { FaGithub, FaReact, FaPython, FaDatabase } from "react-icons/fa";
-
+import { SiJavascript } from "react-icons/si";
 function Proyectos() {
   const lista = [
     { 
-      nombre: "Contador en React", 
-      descripcion: "Aplicación interactiva desarrollada para practicar el manejo de estado (useState) y la creación de componentes en React.",
-      link: "https://github.com/Alfredo20207/ContadorReact",
-      iconos: [<FaReact key="react" className="text-blue-400 text-2xl" title="React" />]
+      nombre: "Portafolio personal", 
+      descripcion: "Pagina web interactiva desarrollada en React, y publicada en GitHub Pages.",
+      link: "https://github.com/Alfredo20207/PortafolioReact",
+      iconos: [
+        <FaReact key="react" className="text-blue-400 text-2xl" title="React" />,
+        <FaGithub key="github" className="text-gray-400 text-2xl" title="GitHub" />,
+        <SiJavascript key="js" className="text-yellow-400 text-2xl" title="JavaScript" />,
+        <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
+      ]
     },
     { 
       nombre: "Proyecto Python + SQL", 
