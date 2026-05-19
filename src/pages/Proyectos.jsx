@@ -12,16 +12,7 @@ function Proyectos() {
         <SiJavascript key="js" className="text-yellow-400 text-2xl" title="JavaScript" />,
         <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
       ]
-    },
-    { 
-      nombre: "Proyecto Python + SQL", 
-      descripcion: "Análisis y gestión de datos automatizado. Conecta un script de Python con una base de datos relacional para procesar información eficientemente.",
-      link: "https://github.com/Alfredo20207/ProyectoSQL",
-      iconos: [
-        <FaPython key="py" className="text-blue-500 text-2xl" title="Python" />, 
-        <FaDatabase key="db" className="text-green-400 text-2xl" title="SQL" />
-      ]
-    },
+    }
   ];
 
   return (
