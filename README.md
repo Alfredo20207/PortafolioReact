@@ -1,16 +1,46 @@
-# React + Vite
+# Portafolio React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio personal creado con **React** y **Vite**, donde muestro proyectos, habilidades y tecnologías que domino.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
+- React
+- Vite
+- JavaScript (ES6+)
+- Tailwind CSS
+- Git & GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📂 Estructura del proyecto
+- `src/` → Contiene los componentes principales.
+- `public/` → Archivos estáticos.
+- `package.json` → Configuración y dependencias.
 
-## React Compiler
+## 🌐 Demo
+Puedes ver el portafolio en línea aquí:  
+👉 [Portafolio en GitHub Pages](https://Alfredo20207.github.io/PortafolioReact)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Instalación y uso
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Alfredo20207/PortafolioReact.git
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Intala dependencias
+
+npm install
+
+Ejecuta en modo desarrollo
+
+npm run dev
+
+Genera la version de produccion
+
+npm run build
+
+
+Contacto
+
+Email: resendizbaalfredo20@gmail.com
+Linkedin: www.linkedin.com/in/alfredo-resendiz-ing
+
+
+
