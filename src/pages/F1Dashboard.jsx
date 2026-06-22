@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import dashboardImg from '../assets/PowerBi_Dashboard.png';
 
 function F1Dashboard() {
   return (
@@ -11,7 +12,7 @@ function F1Dashboard() {
         <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
           Análisis Estratégico y de Rendimiento: "La anatomía del Overcut vs. Undercut" (Enfoque SQL + Power BI)
         </h2>
-        <p className="text-xl text-gray-200 mb-10 leading-relaxed max-w-4xl">
+        <p className="text-xl text-gray-200 mb-10 leading-relaxed max-w-4xl text-justify">
             Desarrollo de un dashboard interactivo de inteligencia de carreras enfocado en optimizar las estrategias de paradas en boxes (Pit Stops). A través de la extracción de datos y modelado, se analizó la eficiencia por escudería y la evolución histórica de tiempos para identificar ventajas competitivas críticas en los circuitos.
         </p>
 
@@ -20,9 +21,10 @@ function F1Dashboard() {
           {/* Placeholder para Power BI / Iframe */}
           <div className="text-center z-10 w-full">
             <h3 className="text-2xl font-semibold text-white mb-4">La anatomía del Overcut vs. Undercut</h3>
-            <p className="text-gray-400 mb-6">Reemplaza este contenedor gris con el código de inserción (iframe) de tu informe de Power BI, o coloca aquí tus capturas de pantalla.</p>
-            <div className="animate-pulse bg-white/10 w-full h-[500px] rounded-xl flex items-center justify-center border border-dashed border-white/20">
-              <span className="text-gray-500 font-mono bg-black/50 p-2 rounded">&lt;iframe src="..." width="100%" height="100%" /&gt;</span>
+            <p className="text-gray-400 mb-6"></p>
+            
+            <div className="w-full rounded-xl flex items-center justify-center transition-transform hover:scale-[1.01] duration-500">
+             <img src={dashboardImg} alt="Dashboard F1 Power BI" className="w-full h-auto object-contain rounded-xl shadow-2xl border border-white/20" />
             </div>
           </div>
           
