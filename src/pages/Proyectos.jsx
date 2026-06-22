@@ -1,5 +1,5 @@
 import { FaGithub, FaReact } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiPython, SiMysql, SiPowerbi, SiMicrosoftexcel } from "react-icons/si";
 function Proyectos() {
   const lista = [
     {
@@ -11,6 +11,18 @@ function Proyectos() {
         <FaGithub key="github" className="text-gray-400 text-2xl" title="GitHub" />,
         <SiJavascript key="js" className="text-yellow-400 text-2xl" title="JavaScript" />,
         <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
+      ],
+    },
+    {
+      nombre: "Análisis Estratégico y de Rendimiento: La anatomía del Overcut vs. Undercut (Enfoque SQL + Power BI)",
+      descripcion: "En la F1, las carreras se ganan o pierden por décimas de segundo en los boxes. El objetivo de este proyecto fue analizar el rendimiento estratégico de las paradas en boxes para responder: ¿Cuáles escuderías son más consistentes y cómo impacta cada circuito en sus tiempos de respuesta?",
+      link: "https://github.com/Alfredo20207/Telemetry-F1.git",
+      iconos: [
+        <SiPython key="python" className="text-blue-500 text-2xl" title="Python" />,
+        <SiMysql key="mysql" className="text-blue-600 text-2xl" title="MySQL" />,
+        <SiPowerbi key="powerbi" className="text-yellow-500 text-2xl" title="Power BI" />,
+        <SiMicrosoftexcel key="excel" className="text-green-600 text-2xl" title="Excel" />,
+        <FaGithub key="github2" className="text-gray-400 text-2xl" title="GitHub" />
       ],
     }
   ];
