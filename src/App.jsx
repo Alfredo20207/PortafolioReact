@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Proyectos from "./pages/Proyectos";
 import Contacto from "./pages/Contacto";
+import F1Dashboard from "./pages/F1Dashboard";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/proyectos" element={<Proyectos />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/f1-dashboard" element={<F1Dashboard />} />
           </Routes>
         </main>
         <Footer />

@@ -1,5 +1,6 @@
-import { FaGithub, FaReact } from "react-icons/fa";
+import { FaGithub, FaReact, FaChartBar } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss, SiPython, SiMysql, SiPowerbi, SiMicrosoftexcel } from "react-icons/si";
+import { Link } from "react-router-dom";
 function Proyectos() {
   const lista = [
     {
@@ -17,6 +18,7 @@ function Proyectos() {
       nombre: "Análisis Estratégico y de Rendimiento: La anatomía del Overcut vs. Undercut (Enfoque SQL + Power BI)",
       descripcion: "En la F1, las carreras se ganan o pierden por décimas de segundo en los boxes. El objetivo de este proyecto fue analizar el rendimiento estratégico de las paradas en boxes para responder: ¿Cuáles escuderías son más consistentes y cómo impacta cada circuito en sus tiempos de respuesta?",
       link: "https://github.com/Alfredo20207/Telemetry-F1.git",
+      dashboardLink: "/f1-dashboard",
       iconos: [
         <SiPython key="python" className="text-blue-500 text-2xl" title="Python" />,
         <SiMysql key="mysql" className="text-blue-600 text-2xl" title="MySQL" />,
@@ -50,15 +52,25 @@ function Proyectos() {
                 {p.iconos}
               </div>
 
-              {/* Botón de GitHub */}
-              <a
-                href={p.link}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center space-x-2 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg shadow-lg hover:bg-yellow-500 hover:scale-[1.03] transition-all duration-300">
-                <FaGithub className="text-xl" />
-                <span>Ver Código</span>
-              </a>
+              {/* Botones */}
+              <div className="flex gap-2 justify-end flex-wrap">
+                {p.dashboardLink && (
+                  <Link
+                    to={p.dashboardLink}
+                    className="flex items-center space-x-2 bg-blue-500 text-white font-semibold px-3 py-2 sm:px-4 sm:py-2 rounded-lg shadow-lg hover:bg-blue-600 hover:scale-[1.03] transition-all duration-300">
+                    <FaChartBar className="text-xl" />
+                    <span className="hidden sm:inline">Dashboard</span>
+                  </Link>
+                )}
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center space-x-2 bg-yellow-400 text-black font-semibold px-3 py-2 sm:px-4 sm:py-2 rounded-lg shadow-lg hover:bg-yellow-500 hover:scale-[1.03] transition-all duration-300">
+                  <FaGithub className="text-xl" />
+                  <span className="hidden sm:inline">Código</span>
+                </a>
+              </div>
             </div>
           </div>
         ))}
