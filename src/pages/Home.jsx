@@ -7,6 +7,7 @@ import {
   SiRailway
 } from "react-icons/si";
 import perfil from "../assets/perfil.jpeg";
+import myCV from "../assets/Alfredo Resendiz Barrera CV..pdf";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -48,8 +49,8 @@ function Home() {
       {/* Botones de acción */}
       <div className="flex flex-col sm:flex-row gap-4 mt-4">
         <a
-          href="/CV_Alfredo_Resendiz.pdf" 
-          download="CV_Alfredo_Resendiz.pdf"
+          href={myCV} 
+          download="Alfredo_Resendiz_CV.pdf"
           className="flex items-center justify-center gap-2 bg-white text-indigo-600 font-bold px-8 py-3 rounded-lg shadow-xl hover:bg-gray-100 hover:scale-105 hover:-translate-y-1 transition-all duration-300"
         >
           <FaFileDownload className="text-xl" />
