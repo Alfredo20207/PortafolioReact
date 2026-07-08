@@ -1,5 +1,5 @@
 import { FaGithub, FaReact, FaChartBar } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiPython, SiMysql, SiPowerbi, SiMicrosoftexcel } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiPython, SiMysql, SiPowerbi, SiMicrosoftexcel, SiGreensock } from "react-icons/si";
 import { Link } from "react-router-dom";
 function Proyectos() {
   const lista = [
@@ -25,6 +25,19 @@ function Proyectos() {
         <SiPowerbi key="powerbi" className="text-yellow-500 text-2xl" title="Power BI" />,
         <SiMicrosoftexcel key="excel" className="text-green-600 text-2xl" title="Excel" />,
         <FaGithub key="github2" className="text-gray-400 text-2xl" title="GitHub" />
+      ],
+    },
+    {
+      nombre: "Spotify Data Analytics Dashboard",
+      descripcion : "Aplicación web interactiva que procesa y visualiza datos analíticos de canciones de Spotify a partir de archivos masivos CSV.",
+      link: "https://github.com/Alfredo20207/Dashboard-Spotify",
+      dashboardLink: "/spotify-dashboard",
+      iconos : [
+        <SiMicrosoftexcel key="excel" className="text-green-600 text-2xl" title="Excel" />,
+        <FaReact key="react" className="text-blue-400 text-2xl" title="React" />,
+        <FaGithub key="github2" className="text-gray-400 text-2xl" title="GitHub" />,
+        <SiJavascript key="js" className="text-yellow-400 text-2xl" title="JavaScript" />,
+        <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
       ],
     }
   ];
@@ -61,6 +74,16 @@ function Proyectos() {
                     <FaChartBar className="text-xl" />
                     <span className="hidden sm:inline">Dashboard</span>
                   </Link>
+                )}
+                {p.dashboardExternal && (
+                  <a
+                    href={p.dashboardExternal}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center space-x-2 bg-blue-500 text-white font-semibold px-3 py-2 sm:px-4 sm:py-2 rounded-lg shadow-lg hover:bg-blue-600 hover:scale-[1.03] transition-all duration-300">
+                    <FaChartBar className="text-xl" />
+                    <span className="hidden sm:inline">Dashboard</span>
+                  </a>
                 )}
                 <a
                   href={p.link}
