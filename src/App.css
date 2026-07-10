@@ -1,18 +1,75 @@
 @import "tailwindcss";
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-.background-container {
-  background-image: url('https://www.xtrafondos.com/wallpaper/5120x2880/13750-arte-abstracto-degradado-de-rosa-morado.html#&gid=1&pid=1');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
   min-height: 100vh;
-  width: 100%
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.organic-bg {
+  background-color: #020617; /* Slate 950 */
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.organic-bg::before,
+.organic-bg::after,
+.organic-blob-3 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: 0;
+  animation: float 10s infinite ease-in-out alternate;
+}
+
+.organic-bg::before {
+  width: 50vw;
+  height: 50vw;
+  background: rgba(124, 58, 237, 0.25); /* Violet */
+  top: -20%;
+  left: -10%;
+}
+
+.organic-bg::after {
+  width: 60vw;
+  height: 60vw;
+  background: rgba(14, 165, 233, 0.2); /* Sky blue */
+  bottom: -20%;
+  right: -10%;
+  animation-delay: -3s;
+}
+
+.organic-blob-3 {
+  width: 40vw;
+  height: 40vw;
+  background: rgba(236, 72, 153, 0.2); /* Pink */
+  top: 30%;
+  left: 30%;
+  animation-duration: 12s;
+  animation-delay: -7s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(30px, 50px) scale(1.1);
+  }
+}
+
+.glass-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(15, 23, 42, 0.5); /* Slate 900 con opacidad */
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.02);
 }
   
 .logo {

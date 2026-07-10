@@ -5,7 +5,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white">
+    <nav className="bg-slate-800/50 backdrop-blur-md border-b border-white/10 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -32,7 +32,7 @@ function Navbar() {
 
       {/* Links en móvil */}
       {open && (
-        <div className="sm:hidden px-4 pb-3 space-y-2 bg-gray-800">
+        <div className="sm:hidden px-4 pb-3 space-y-2 bg-slate-800/80 backdrop-blur-md border-b border-white/10">
           <Link to="/" className="block hover:text-yellow-400">Inicio</Link>
           <Link to="/proyectos" className="block hover:text-yellow-400">Proyectos</Link>
           <Link to="/contacto" className="block hover:text-yellow-400">Contacto</Link>
