@@ -82,7 +82,8 @@ function Home() {
             { titulo: "Introduction to cybersecurity", emisor: "Cisco", fecha: "2021" },
             { titulo: "Introduction to Power Bi", emisor:"Santander", fecha: "2026" },
             { titulo: "Intruction to Data Science", emisor:"Santander", fecha: "2026"    },
-            { titulo: "Matematicas para la ciencia de datos", emisor:"Santander", fecha: "En curso"    }
+            { titulo: "Matematicas para la ciencia de datos", emisor:"Santander", fecha: "En curso"    },
+            { titulo: "Excel", emisor:"Santander", fecha: "2026"    }
           ].map((cert, i) => (
             <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg hover:bg-white/20 hover:-translate-y-2 transition-all duration-300 flex flex-col">
               <FaCertificate className="text-3xl text-yellow-400 mb-4" />
