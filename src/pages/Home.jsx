@@ -83,7 +83,8 @@ function Home() {
             { titulo: "Introduction to Power Bi", emisor:"Santander", fecha: "2026" },
             { titulo: "Intruction to Data Science", emisor:"Santander", fecha: "2026"    },
             { titulo: "Excel", emisor:"Santander", fecha: "2026"    },
-            { titulo: "Excel Avanzado", emisor:"Santander", fecha: "en curso"    }
+            { titulo: "Excel Avanzado", emisor:"Santander", fecha: "en curso"    },
+            { titulo: "Data Analyst", emisor:"Google", fecha: "en curso"  }
           ].map((cert, i) => (
             <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg hover:bg-white/20 hover:-translate-y-2 transition-all duration-300 flex flex-col">
               <FaCertificate className="text-3xl text-yellow-400 mb-4" />
