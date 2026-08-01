@@ -82,7 +82,7 @@ function Home() {
             { titulo: "Introduction to cybersecurity", emisor: "Cisco", fecha: "2021" },
             { titulo: "Introduction to Power Bi", emisor:"Santander", fecha: "2026" },
             { titulo: "Intruction to Data Science", emisor:"Santander", fecha: "2026"    },
-            { titulo: "Excel", emisor:"Santander", fecha: "2026"    },
+            { titulo: "Excel Intermedio", emisor:"Santander", fecha: "2026"    },
             { titulo: "Excel Avanzado", emisor:"Santander", fecha: "en curso"    },
             { titulo: "Data Analyst", emisor:"Google", fecha: "en curso"  }
           ].map((cert, i) => (
