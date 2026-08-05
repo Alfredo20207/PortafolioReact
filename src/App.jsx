@@ -6,6 +6,7 @@ import Proyectos from "./pages/Proyectos";
 import Contacto from "./pages/Contacto";
 import F1Dashboard from "./pages/F1Dashboard";
 import SpotifyDashboard from "./pages/SpotifyDashboard";
+import SupermarketDashboard from "./pages/SupermarketDashboard";
 import "./App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path="/contacto" element={<Contacto />} />
               <Route path="/f1-dashboard" element={<F1Dashboard />} />
               <Route path="/spotify-dashboard" element={<SpotifyDashboard />} />
+              <Route path="/supermarket-dashboard" element={<SupermarketDashboard />} />
             </Routes>
           </main>
           <Footer />

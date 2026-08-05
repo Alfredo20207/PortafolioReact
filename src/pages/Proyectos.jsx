@@ -39,7 +39,21 @@ function Proyectos() {
         <SiJavascript key="js" className="text-yellow-400 text-2xl" title="JavaScript" />,
         <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
       ],
+    },
+    //dashboard python
+    {
+      nombre: "Dashboard Interactivo de Ventas y Rendimiento Comercial",
+      descripcion: "Tablero analítico e interactivo desarrollado en Python para explorar, filtrar y visualizar el rendimiento comercial de una cadena minorista.",
+      link: "https://github.com/Alfredo20207/supermarket",
+      dashboardLink: "/supermarket-dashboard",
+      
+      iconos :[
+        <FaGithub key="github2" className="text-gray-400 text-2xl" title="GitHub" />,
+        <SiPython key="python" className="text-blue-500 text-2xl" title="Python" />,
+      ],
+
     }
+
   ];
 
   return (
