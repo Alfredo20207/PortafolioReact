@@ -1,22 +1,25 @@
 import { FaGithub, FaReact, FaChartBar } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiPython, SiMysql, SiPowerbi, SiMicrosoftexcel, SiGreensock } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiPython, SiMysql, SiPowerbi, SiMicrosoftexcel, SiGreensock, SiRender } from "react-icons/si";
 import { Link } from "react-router-dom";
 function Proyectos() {
   const lista = [
+     //dashboard python
     {
-      nombre: "Portafolio personal",
-      descripcion: "Pagina web interactiva desarrollada en React, y publicada en GitHub Pages.",
-      link: "https://github.com/Alfredo20207/PortafolioReact",
-      iconos: [
-        <FaReact key="react" className="text-blue-400 text-2xl" title="React" />,
-        <FaGithub key="github" className="text-gray-400 text-2xl" title="GitHub" />,
-        <SiJavascript key="js" className="text-yellow-400 text-2xl" title="JavaScript" />,
-        <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
+      nombre: "Dashboard Interactivo de Ventas y Rendimiento Comercial",
+      descripcion: "Dashboard analítico e interactivo desarrollado en Python para explorar tendencias de ventas, filtrar segmentos clave y apoyar la toma de decisiones comerciales en una cadena minorista.",
+      link: "https://github.com/Alfredo20207/supermarket",
+      dashboardLink: "/supermarket-dashboard",
+      
+      iconos :[
+        <FaGithub key="github2" className="text-gray-400 text-2xl" title="GitHub" />,
+        <SiPython key="python" className="text-blue-500 text-2xl" title="Python" />,
+        <SiRender key="render" className="text-white text-2xl" title="Render" />,
       ],
+
     },
     {
       nombre: "Análisis Estratégico y de Rendimiento: La anatomía del Overcut vs. Undercut (Enfoque SQL + Power BI)",
-      descripcion: "En la F1, las carreras se ganan o pierden por décimas de segundo en los boxes. El objetivo de este proyecto fue analizar el rendimiento estratégico de las paradas en boxes para responder: ¿Cuáles escuderías son más consistentes y cómo impacta cada circuito en sus tiempos de respuesta?",
+      descripcion: "Proyecto de análisis estratégico en Fórmula 1 enfocado en evaluar el rendimiento de las paradas en boxes, identificar escuderías más consistentes y descubrir cómo cada circuito influye en los tiempos de respuesta.",
       link: "https://github.com/Alfredo20207/Telemetry-F1.git",
       dashboardLink: "/f1-dashboard",
       iconos: [
@@ -27,9 +30,22 @@ function Proyectos() {
         <FaGithub key="github2" className="text-gray-400 text-2xl" title="GitHub" />
       ],
     },
+
+    {
+      nombre: "Portafolio personal",
+      descripcion: "Portafolio personal interactivo desarrollado en React para presentar mi perfil, proyectos y habilidades de forma clara, moderna y atractiva.",
+      link: "https://github.com/Alfredo20207/PortafolioReact",
+      iconos: [
+        <FaReact key="react" className="text-blue-400 text-2xl" title="React" />,
+        <FaGithub key="github" className="text-gray-400 text-2xl" title="GitHub" />,
+        <SiJavascript key="js" className="text-yellow-400 text-2xl" title="JavaScript" />,
+        <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
+      ],
+    },
+    
     {
       nombre: "Spotify Data Analytics Dashboard",
-      descripcion : "Aplicación web interactiva que procesa y visualiza datos analíticos de canciones de Spotify a partir de archivos masivos CSV.",
+      descripcion: "Aplicación web interactiva para analizar y visualizar patrones de datos de Spotify, transformando información masiva en insights claros y fáciles de interpretar.",
       link: "https://github.com/Alfredo20207/Dashboard-Spotify",
       dashboardLink: "/spotify-dashboard",
       iconos : [
@@ -40,20 +56,7 @@ function Proyectos() {
         <SiTailwindcss key="css" className="text-blue-400 text-2xl" title="Tailwind CSS" />
       ],
     },
-    //dashboard python
-    {
-      nombre: "Dashboard Interactivo de Ventas y Rendimiento Comercial",
-      descripcion: "Tablero analítico e interactivo desarrollado en Python para explorar, filtrar y visualizar el rendimiento comercial de una cadena minorista.",
-      link: "https://github.com/Alfredo20207/supermarket",
-      dashboardLink: "/supermarket-dashboard",
-      
-      iconos :[
-        <FaGithub key="github2" className="text-gray-400 text-2xl" title="GitHub" />,
-        <SiPython key="python" className="text-blue-500 text-2xl" title="Python" />,
-      ],
-
-    }
-
+   
   ];
 
   return (

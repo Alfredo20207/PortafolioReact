@@ -4,7 +4,8 @@ import {
   SiR,    
   SiPowerbi,
   SiMongodb,
-  SiRailway
+  SiRailway,
+  SiRender
 } from "react-icons/si";
 import perfil from "../assets/perfil.jpeg";
 import myCV from "../assets/Ing. Alfredo Resendiz Barrera CV.pdf";
@@ -38,10 +39,17 @@ function Home() {
           { Icon: FaGitAlt, color: "text-orange-500", title: "Git", shadow: "hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.8)]" },
           { Icon: FaBitbucket, color: "text-blue-400", title: "Bitbucket", shadow: "hover:drop-shadow-[0_0_15px_rgba(96,165,250,0.8)]" },
           { Icon: FaPython, color: "text-blue-500", title: "Python", shadow: "hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.8)]" },
-          { Icon: SiPowerbi, color: "text-yellow-400", title: "Power BI", shadow: "hover:drop-shadow-[0_0_15px_rgba(250,204,21,0.8)]" }
+          { Icon: SiPowerbi, color: "text-yellow-400", title: "Power BI", shadow: "hover:drop-shadow-[0_0_15px_rgba(250,204,21,0.8)]" },
+          { Icon: SiRender, color: "text-white", title: "Render", shadow: "hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" }
         ].map(({ Icon, color, title, shadow }, index) => (
-          <div key={index} title={title} className={`transition-all duration-300 hover:scale-125 hover:-translate-y-3 cursor-pointer ${shadow}`}>
-            <Icon className={color} />
+          <div key={index} className="relative group flex flex-col items-center">
+            <div className={`transition-all duration-300 group-hover:scale-125 group-hover:-translate-y-3 cursor-pointer ${shadow}`}>
+              <Icon className={color} />
+            </div>
+            {/* Tooltip personalizado */}
+            <span className="absolute -bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs sm:text-sm font-semibold bg-gray-800/90 text-white px-2 py-1 rounded-md whitespace-nowrap pointer-events-none shadow-lg z-10">
+              {title}
+            </span>
           </div>
         ))}
       </div>
