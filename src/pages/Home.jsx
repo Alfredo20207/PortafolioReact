@@ -8,7 +8,7 @@ import {
   SiRender
 } from "react-icons/si";
 import perfil from "../assets/perfil.jpeg";
-import myCV from "../assets/Ing. Alfredo Resendiz Barrera CV.pdf";
+import myCV from "../assets/CV_actualizado.pdf";
 import { Link } from "react-router-dom";
 
 function Home() {
