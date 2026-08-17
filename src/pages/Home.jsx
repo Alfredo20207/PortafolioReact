@@ -23,8 +23,8 @@ function Home() {
 
       {/* Texto de presentación */}
       <h1 className="text-3xl sm:text-4xl font-bold mb-4">¡Hola! Soy Alfredo 👋</h1>
-      <p className="text-base sm:text-lg max-w-xl text-center mb-6">
-        Analista de datos en formación apasionado por Power BI, SQL, NoSQL, Python, R, Excel, Estadística y Matemáticas.
+      <p className="text-base sm:text-lg max-w-xl text-justify mb-6">
+        Ingeniero en Gestión y Desarrollo de Software especializado en la intersección entre el análisis de datos y el desarrollo frontend. Cuento con experiencia diseñando tableros dinámicos en Power BI integrados a bases de datos relacionales (SQL), automatizando la entrega de KPIs críticos y construyendo aplicaciones web interactivas con Python (Streamlit) y React. Me apasiona optimizar procesos, aplicar un enfoque UX/UI en el diseño de interfaces y aportar valor medible a través de proyectos reales de analítica e ingeniería de software.
       </p>
 
       {/* Íconos de tecnologías animadas */}
